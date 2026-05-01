@@ -10,7 +10,6 @@ class FormModel {
         this.medicalConditions = medicalConditions;
         this.competitionLevel = competitionLevel;
         this.position = position;
-        this.createdAt = new Date(); // Added a timestamp just in case!
     }
 }
 
