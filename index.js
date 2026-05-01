@@ -12,11 +12,6 @@ app.get('/test', (req, res) => {
     res.send("server is running");
 });
 const dbURI = "mongodb://elijahzb:elijahzb@ac-xhkwgwq-shard-00-00.86rp3oj.mongodb.net:27017,ac-xhkwgwq-shard-00-01.86rp3oj.mongodb.net:27017,ac-xhkwgwq-shard-00-02.86rp3oj.mongodb.net:27017/?ssl=true&replicaSet=atlas-fyhs8f-shard-0&authSource=admin&appName=elijahzb";
-
-mongoose.connect(dbURI)
-    .then(() => console.log("✅ Santa Rosa DB Connected"))
-    .catch(err => console.error("❌ Connection Failed:", err));
-
 mongoose 
     .connect(dbURI) 
     .then(() => console.log("MongoDB Connected Successfully"))
