@@ -4,7 +4,7 @@
   "description": "Backend for the Santa Rosa Volleyball League Portal",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "PORT=10000 node index.js",
     "dev": "nodemon index.js"
   },
   "keywords": [],
