@@ -40,9 +40,9 @@ app.get('/', (req, res) => {
 const submitForm = require('./API/submit'); 
 app.use("/submit", submitForm); 
 
-// --- START SERVER ---
-const PORT = process.env.PORT || 8080; 
+// Force the port to 10000 if process.env.PORT is missing
+const PORT = process.env.PORT || 10000; 
 
 server.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`Santa Rosa Backend forced to port ${PORT}`);
 });
